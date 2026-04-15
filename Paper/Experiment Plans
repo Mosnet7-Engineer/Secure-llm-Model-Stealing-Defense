@@ -1,12 +1,12 @@
 II . Experiment Plan
-🧪 1. Threat Model
+1. Threat Model
 •	Attacker has:
 o	Black-box API access to an LLM
 o	No access to parameters
 •	Goal:
 o	Steal the model by training a substitute using queries
 ________________________________________
-🧪 2. Attack Setup
+ 2. Attack Setup
 You will:
 •	Use an open-source LLM (e.g., LLaMA-2 / Mistral / GPT-Neo) as the target
 •	Simulate API access
@@ -19,13 +19,13 @@ Metrics:
 •	BLEU / ROUGE
 •	Embedding cosine similarity
 ________________________________________
-🧪 3. Defense Mechanism
+ 3. Defense Mechanism
 Your defense has two layers:
-🔹 A. Output Watermarking
+ A. Output Watermarking
 •	Slightly modify word choices / token probabilities
 •	Embed statistical signal
 •	Does NOT reduce readability
-🔹 B. Query Behavior Detection
+ B. Query Behavior Detection
 Track:
 •	Query rate
 •	Prompt diversity
@@ -34,7 +34,7 @@ Track:
 Use:
 •	Isolation Forest / clustering / heuristics
 ________________________________________
-🧪 4. Evaluation Metrics
+ 4. Evaluation Metrics
 Metric	Purpose
 Extraction Success Rate	How well attacker recreates model
 Detection Accuracy	How often attacker is caught
