@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+
+# Your results
+queries = [50, 100, 200]
+similarity = [0.6168, 0.6189, 0.6181]
+
+plt.figure()
+plt.plot(queries, similarity, marker='o')
+
+plt.xlabel("Number of Queries")
+plt.ylabel("Similarity Score")
+plt.title("Impact of Query Volume on Defense Effectiveness")
+
+plt.grid()
+
+# Save figure
+plt.savefig("results/similarity_plot.png")
+
+plt.show()
