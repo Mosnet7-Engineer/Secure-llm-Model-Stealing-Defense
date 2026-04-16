@@ -1,4 +1,0 @@
-Experiment: 100 queries
-Baseline file: results/baseline_outputs_100.txt
-Defended file: results/defended_outputs_100.txt
-Similarity Score: 0.618937345680315
